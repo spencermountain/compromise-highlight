@@ -1,21 +1,30 @@
 {
   "name": "compromise-highlight",
-  "description": "",
+  "description": "custom syntax-highlighting for english grammar",
   "version": "0.0.1",
-  "licence": "MIT",
+  "main": "./builds/compromise-highlight.js",
+  "unpkg": "./builds/compromise-highlight.min.js",
+  "module": "./builds/compromise-highlight.mjs",
   "private": false,
   "author": "Spencer Kelly (spencermountain)",
   "homepage": "https://github.com/spencermountain/compromise-highlight#readme",
+  "licence": "MIT",
   "scripts": {
     "watch": "npm run start",
     "start": "budo index.js:assets/bundle.js --live",
     "build:demo": "browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | derequire > ./assets/bundle.js",
-    "build": "node ./scripts/build.js"
+    "build": "rollup -c"
   },
   "dependencies": {
     "compromise": "^12.3.0"
   },
   "devDependencies": {
+    "rollup": "1.27.5",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.1.0",
+    "rollup-plugin-terser": "^5.0.0",
     "@babel/core": "7.8.0",
     "@babel/preset-env": "7.8.2",
     "babelify": "10.0.0",

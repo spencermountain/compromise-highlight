@@ -1,6 +1,6 @@
 const CodeMirror = require('./assets/codemirror')
-const keyPress = require('./src')
-// require('./assets/somehowscript')(CodeMirror)
+const highlight = require('./src')
+// const highlight = require('./builds/compromise-highlight')
 
 var editor = CodeMirror.fromTextArea(document.getElementById('text'), {
   viewportMargin: Infinity,
@@ -13,10 +13,9 @@ var editor = CodeMirror.fromTextArea(document.getElementById('text'), {
 })
 
 let patterns = document.querySelector('#patterns').innerHTML
-console.log(patterns)
 patterns = JSON.parse(patterns)
 
-keyPress(editor, patterns)
+highlight(editor, patterns)
 
 //run highlighting on init
 CodeMirror.signal(editor, 'change', editor)

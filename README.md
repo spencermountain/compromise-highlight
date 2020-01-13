@@ -47,8 +47,7 @@ const CodeMirror = require('codemirror')
 const highlight = require('compromise-highlight')
 
 //setup codemirror instance
-const el = document.getElementById('text')
-var editor = CodeMirror.fromTextArea(el)
+let editor = CodeMirror.fromTextArea(document.getElementById('text'))
 
 //pass it over, with your patterns
 highlight(editor, { '#Person+': 'person' })
