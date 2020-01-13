@@ -1,0 +1,29 @@
+{
+  "name": "compromise-highlight",
+  "description": "",
+  "version": "0.0.1",
+  "licence": "MIT",
+  "private": false,
+  "author": "Spencer Kelly (spencermountain)",
+  "homepage": "https://github.com/spencermountain/compromise-highlight#readme",
+  "scripts": {
+    "watch": "npm run start",
+    "start": "budo index.js:assets/bundle.js --live",
+    "build:demo": "browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | derequire > ./assets/bundle.js",
+    "build": "node ./scripts/build.js"
+  },
+  "dependencies": {
+    "compromise": "^12.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.0",
+    "@babel/preset-env": "7.8.2",
+    "babelify": "10.0.0",
+    "budo": "11.6.3",
+    "derequire": "2.0.6",
+    "htm": "2.2.1",
+    "shelljs": "0.8.3",
+    "terser": "4.6.2",
+    "vhtml": "2.2.0"
+  }
+}

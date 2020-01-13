@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="testViewport"
+      name="viewport"
+      content="initial-scale=1,width=800"
+    />
+    <title></title>
+    <link href="./assets/spencer.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/codemirror.css" />
+    <style>
+      .green {
+        background-color: #6accb2;
+        color: white;
+      }
+      .red {
+        background-color: #cc7066;
+        color: white;
+      }
+      .pink {
+        background-color: #d8b3e6;
+        color: white;
+      }
+      .yellow {
+        background-color: #e6d7b3;
+        color: white;
+      }
+      .purple {
+        background-color: #978ba3;
+        color: white;
+      }
+      .blue {
+        background-color: #6699cc;
+        color: white;
+      }
+      .orange {
+        background-color: #cc8a66;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body class="body">
+    <h2 class="grey">
+      <a href="https://github.com/spencermountain/compromise-highlight"
+        >compromise-highlight</a
+      >
+      demo
+    </h2>
+    <div>
+      demonstration of custom syntax-highlighting of natural-language text
+    </div>
+    <!-- stage -->
+    <div class="row wrap mt4 mh4 wrap" style="height:500px; text-align:left;">
+      <div>
+        <div>
+          Grammatical patterns: &nbsp;
+          <a
+            href="https://observablehq.com/@spencermountain/compromise-match-syntax"
+            >[docs]</a
+          >
+        </div>
+        <textarea
+          id="patterns"
+          class="minh5 p1 w9 minw8"
+          style="line-height:1.2rem;"
+        >
+{
+  "i #Verb" : "orange",
+  "#Person+" : "purple"
+}
+          </textarea
+        >
+      </div>
+
+      <div>
+        <div>Textarea:</div>
+        <div class="outline">
+          <textarea id="text" class="w75p h100p p2 dimgrey ">
+What's with these homies, dissing my girl?
+Why do they gotta front?
+What did we ever do to these guys
+That made them so violent?
+
+Woo-hoo, but you know I'm yours
+Woo-hoo, and I know you're mine
+Woo-hoo, and that's for all of time
+
+Oo-ee-oo I look just like Buddy Holly
+Oh-oh, and you're Mary Tyler Moore
+I don't care what they say about us anyway
+I don't care 'bout that
+
+Don't you ever fear, I'm always near
+I know that you need help
+Your tongue is twisted, your eyes are slit
+You need a guardian
+
+Woo-hoo, and you know I'm yours
+Woo-hoo, and I know you're mine
+Woo-hoo, and that's for all of time
+
+Oo-ee-oo I look just like Buddy Holly
+Oh-oh, and you're Mary Tyler Moore
+I don't care what they say about us anyway
+I don't care 'bout that
+I don't care 'bout that
+
+Bang, bang a knock on the door
+Another big bang and you're down on the floor
+Oh no! What do we do?
+Don't look now but I lost my shoe
+I can't run and I can't kick
+What's the matter babe are you feeling sick?
+What's the matter, what's the matter, what's the matter you?
+What's the matter babe, are you feeling blue?
+
+And that's for all of time
+And that's for all of time
+
+Oo-ee-oo I look just like Buddy Holly
+Oh-oh, and you're Mary Tyler Moore
+I don't care what they say about us anyway
+I don't care 'bout that
+      </textarea
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--  footer -->
+    <div class="footer right">
+      <a href="http://twitter.com/spencermountain/">@spencermountain</a>
+    </div>
+    <!-- script -->
+    <script src="./assets/bundle.js"></script>
+  </body>
+</html>
