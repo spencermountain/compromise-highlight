@@ -31,7 +31,7 @@
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.1.0",
     "rollup-plugin-terser": "6.1.0",
-    "shelljs": "0.8.4",
+    "shelljs": "0.8.5",
     "terser": "4.8.0",
     "vhtml": "2.2.0"
   }
